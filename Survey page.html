@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<style>
+		body{
+			font-family: sans-serif;
+			padding-left: 20%;
+			padding-right: 20%;
+		}
+		label{
+			font-size: 18;
+			display: block;
+			padding-bottom: 10px;
+		}
+		input{
+           display: block;
+		}
+		form{
+			background-color: antiquewhite;
+		}
+		input.checkbox{
+			class="radio-inline" 
+		}
+	</style>
+</head>
+	<body>
+	<h1 id="title"> Survey Form </h1>
+		<p id="description"><em>This is a survey where, you can tell us about music you like?</em> </p>
+		<form id="survey-form">
+			<label id="name-label">Name:  </label>
+			<input type="text" name="name" id="name" id="label_name" required placeholder="Enter your name"><br>
+			<label id="email-label">Email:</label> 
+			<input type="email" name="Email" id="email" id="label_email" required placeholder="Enter your email"><br>
+			<label id="number-label">Number: </label>
+			<input type="number" name="number" id="number" min="0" max="10" id="label_number" required placeholder="Enter number"><br>
+
+            <p>Please select the type of music you like:-</p>
+			<select id="dropdown" name="songs">
+				<option value="sad songs">sad songs</option>
+				<option value=" kpop"> kpop</option>
+				<option value="classic"> classic</option>
+				<option value="beat">beat</option>
+			</select>
+			<br>
+			<p>Select your gender</p>
+			<input type="radio" class="radio-inline" name="gender" value="female">Female<br>
+			<input type="radio" class="radio-inline" name="gender" value="male">Male<br>
+			<input type="radio" class="radio-inline" name="gender" value="others">Others<br>
+            <p>Select the laguange of songs you like</p>
+		    <input type="checkbox" name="language" value="Punjabi">Punjabi<br>
+		    <input type="checkbox" name="language" value="Hindi">Hindi<br>
+		    <input type="checkbox" name="language" value="English">English<br>
+		    <input type="checkbox" name="language" value="Korean">Korean<br>
+		    <input type="checkbox" name="language" value="Russian">Russian<br>
+		    <input type="checkbox" name="language" value="German">German<br>
+		    <input type="checkbox" name="language" value="arabic">Arabic<br>
+            
+        <p>Any comments?</p>
+		<textarea placeholder="Additional comments"></textarea>
+        <input type="submit" id="submit">
+		</form>
+		<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
+
